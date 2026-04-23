@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "stuffed-peppers",
+    "title": "Punjene paprike (stuffed peppers)",
+    "description": "Sweet peppers filled with a savoury meat-and-rice mix, slow-baked in a light tomato base — a Sunday table favourite across the Balkans.",
+    "region": "Balkan home cooking",
+    "prepMinutes": 35,
+    "cookMinutes": 75,
+    "servings": 4,
+    "tags": ["mains", "baked", "comfort"],
+    "ingredients": [
+      { "amount": "4 large", "item": "bell peppers, tops cut and seeded" },
+      { "amount": "500 g", "item": "mixed minced meat (beef and pork, or as Jove uses)" },
+      { "amount": "150 g", "item": "long-grain rice, rinsed" },
+      { "amount": "1", "item": "onion, finely chopped" },
+      { "amount": "2 cloves", "item": "garlic, minced" },
+      { "amount": "400 g", "item": "passata or tinned tomatoes" },
+      { "amount": "500 ml", "item": "light stock" },
+      { "item": "Salt, black pepper, sweet paprika, dried summer savoury (especially if you have it)" },
+      { "amount": "2 tbsp", "item": "oil" }
+    ],
+    "steps": [
+      "Sauté onion in oil until soft, add garlic for the last minute. Mix with mince, raw rice, paprika, salt, and pepper (and savoury if using). Lightly pack into hollowed peppers; replace caps if you kept them.",
+      "Place peppers snugly in a deep baking dish. Pour passata around (not over the filling so it doesn’t wash out) and add stock to come halfway up the peppers.",
+      "Cover and bake in a moderate oven until peppers collapse and the rice is tender, basting once or twice. Uncover for the last stretch for a little colour on top.",
+      "Rest 10 minutes before serving — the filling sets and the flavour mellows. Spoon pan juices over each plate."
+    ],
+    "notes": "This is a starter recipe: swap herbs and spice levels to match how Jove seasons at home. You can add finely diced carrot to the filling for sweetness."
+  }
+]
