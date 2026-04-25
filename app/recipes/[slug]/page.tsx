@@ -1,7 +1,10 @@
 import Link from "next/link"
+
+import Image from "@/lib/next-image"
 import { notFound } from "next/navigation"
 
 import { getAllRecipeSlugs, getRecipeBySlug } from "@/lib/recipes"
+import { publicPath } from "@/lib/utils"
 
 import type { Metadata } from "next"
 
@@ -56,7 +59,21 @@ export default async function RecipePage({ params }: Props) {
         </Link>
       </p>
       <h1 className="mt-3 text-3xl font-medium tracking-tight md:text-4xl">{recipe.title}</h1>
-      <p className="mt-3 max-w-prose text-base leading-relaxed text-muted-foreground">
+
+      {recipe.image && (
+        <div className="relative mt-6 aspect-4/3 w-full max-w-2xl overflow-hidden rounded-xl border border-border/60 bg-muted/30 shadow-sm">
+          <Image
+            src={publicPath(recipe.image)}
+            alt={recipe.title}
+            fill
+            priority
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 42rem"
+          />
+        </div>
+      )}
+
+      <p className="mt-6 max-w-prose text-base leading-relaxed text-muted-foreground">
         {recipe.description}
       </p>
 

@@ -1,6 +1,9 @@
 import Link from "next/link"
 
+import Image from "@/lib/next-image"
+
 import { getAllRecipes } from "@/lib/recipes"
+import { publicPath } from "@/lib/utils"
 
 import type { Metadata } from "next"
 
@@ -24,10 +27,23 @@ export default function RecipesIndexPage() {
           <li key={recipe.slug}>
             <Link
               href={`/recipes/${recipe.slug}`}
-              className="block rounded-lg border border-border bg-card p-4 transition-colors hover:bg-accent/50"
+              className="flex gap-4 overflow-hidden rounded-lg border border-border bg-card transition-colors hover:bg-accent/50"
             >
-              <span className="font-medium">{recipe.title}</span>
-              <p className="mt-1 text-sm text-muted-foreground">{recipe.description}</p>
+              {recipe.image && (
+                <div className="relative h-24 w-28 shrink-0 overflow-hidden bg-muted/30 sm:h-28 sm:w-36">
+                  <Image
+                    src={publicPath(recipe.image)}
+                    alt={recipe.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 7rem, 9rem"
+                  />
+                </div>
+              )}
+              <div className="min-w-0 flex-1 p-4">
+                <span className="font-medium">{recipe.title}</span>
+                <p className="mt-1 text-sm text-muted-foreground">{recipe.description}</p>
+              </div>
             </Link>
           </li>
         ))}

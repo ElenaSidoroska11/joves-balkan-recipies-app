@@ -1,10 +1,12 @@
 import type { Metadata } from "next"
-import Image from "next/image"
 import Link from "next/link"
+
+import Image from "@/lib/next-image"
 
 import { Button } from "@/components/ui/button"
 import { jovePhotos } from "@/lib/jove-photos"
 import { getAllRecipes } from "@/lib/recipes"
+import { publicPath } from "@/lib/utils"
 
 export const metadata: Metadata = {
   title: { absolute: "Jove’s Balkan recipes" },
@@ -14,10 +16,12 @@ export const metadata: Metadata = {
 
 function HeroPhotoFrame({
   src,
+  alt,
   className,
   priority = false,
 }: {
   src: string
+  alt: string
   className?: string
   priority?: boolean
 }) {
@@ -35,6 +39,7 @@ function HeroPhotoFrame({
       <div className="relative h-full w-full overflow-hidden rounded-lg">
         <Image
           src={src}
+          alt={alt}
           fill
           priority={priority}
           className="object-cover"
@@ -97,12 +102,14 @@ export default function HomePage() {
               <div className="grid grid-cols-2 items-start gap-x-6 gap-y-5 sm:gap-x-8 sm:gap-y-6">
                 <HeroPhotoFrame
                   src={jovePhotos[0].src}
+                  alt={jovePhotos[0].alt}
                   priority
                   className="aspect-3/4 w-full max-w-full rotate-2"
                 />
                 <div className="translate-y-3 sm:translate-y-4">
                   <HeroPhotoFrame
                     src={jovePhotos[1].src}
+                    alt={jovePhotos[1].alt}
                     className="aspect-3/4 w-full max-w-full -rotate-3"
                   />
                 </div>
@@ -111,6 +118,7 @@ export default function HomePage() {
                 <div className="w-full max-w-[16rem] sm:max-w-70">
                   <HeroPhotoFrame
                     src={jovePhotos[2].src}
+                    alt={jovePhotos[2].alt}
                     className="aspect-4/3 w-full max-w-full rotate-1"
                   />
                 </div>
@@ -137,22 +145,35 @@ export default function HomePage() {
                 <li key={recipe.slug}>
                   <Link
                     href={`/recipes/${recipe.slug}`}
-                    className="group flex h-full flex-col justify-between rounded-2xl border border-border/50 bg-white/50 p-5 shadow-sm ring-1 ring-foreground/3 transition duration-300 hover:-translate-y-0.5 hover:border-border hover:shadow-md"
+                    className="group flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-border/50 bg-white/50 shadow-sm ring-1 ring-foreground/3 transition duration-300 hover:-translate-y-0.5 hover:border-border hover:shadow-md"
                   >
-                    <div>
-                      <h3 className="text-base leading-snug font-medium text-foreground group-hover:underline group-hover:decoration-primary/50 group-hover:underline-offset-2">
-                        {recipe.title}
-                      </h3>
-                      <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-muted-foreground">
-                        {recipe.description}
-                      </p>
-                    </div>
-                    {recipe.prepMinutes != null &&
-                      recipe.cookMinutes != null && (
-                        <p className="mt-4 text-xs text-muted-foreground/90">
-                          ~{recipe.prepMinutes + recipe.cookMinutes} min
+                    {recipe.image && (
+                      <div className="relative aspect-4/3 w-full overflow-hidden border-b border-border/40 bg-muted/30">
+                        <Image
+                          src={publicPath(recipe.image)}
+                          alt={recipe.title}
+                          fill
+                          className="object-cover transition duration-300 group-hover:scale-[1.02]"
+                          sizes="(max-width: 1024px) 100vw, 33vw"
+                        />
+                      </div>
+                    )}
+                    <div className="flex flex-1 flex-col justify-between p-5">
+                      <div>
+                        <h3 className="text-base leading-snug font-medium text-foreground group-hover:underline group-hover:decoration-primary/50 group-hover:underline-offset-2">
+                          {recipe.title}
+                        </h3>
+                        <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-muted-foreground">
+                          {recipe.description}
                         </p>
-                      )}
+                      </div>
+                      {recipe.prepMinutes != null &&
+                        recipe.cookMinutes != null && (
+                          <p className="mt-4 text-xs text-muted-foreground/90">
+                            ~{recipe.prepMinutes + recipe.cookMinutes} min
+                          </p>
+                        )}
+                    </div>
                   </Link>
                 </li>
               ))}

@@ -5,6 +5,7 @@ export type Ingredient = {
 
 export type Recipe = {
   slug: string
+  image?: string
   title: string
   description: string
   region?: string

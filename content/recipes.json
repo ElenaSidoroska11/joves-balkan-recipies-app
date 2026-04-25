@@ -1,7 +1,8 @@
 [
   {
     "slug": "stuffed-peppers",
-    "title": "Punjene paprike (stuffed peppers)",
+    "image": "recipies-photos/stuffed-peppers.png",
+    "title": "Полнети пиперки (stuffed peppers)",
     "description": "Sweet peppers filled with a savoury meat-and-rice mix, slow-baked in a light tomato base — a Sunday table favourite across the Balkans.",
     "region": "Balkan home cooking",
     "prepMinutes": 35,
@@ -10,13 +11,18 @@
     "tags": ["mains", "baked", "comfort"],
     "ingredients": [
       { "amount": "4 large", "item": "bell peppers, tops cut and seeded" },
-      { "amount": "500 g", "item": "mixed minced meat (beef and pork, or as Jove uses)" },
+      {
+        "amount": "500 g",
+        "item": "mixed minced meat (beef and pork, or as Jove uses)"
+      },
       { "amount": "150 g", "item": "long-grain rice, rinsed" },
       { "amount": "1", "item": "onion, finely chopped" },
       { "amount": "2 cloves", "item": "garlic, minced" },
       { "amount": "400 g", "item": "passata or tinned tomatoes" },
       { "amount": "500 ml", "item": "light stock" },
-      { "item": "Salt, black pepper, sweet paprika, dried summer savoury (especially if you have it)" },
+      {
+        "item": "Salt, black pepper, sweet paprika, dried summer savoury (especially if you have it)"
+      },
       { "amount": "2 tbsp", "item": "oil" }
     ],
     "steps": [
@@ -26,5 +32,232 @@
       "Rest 10 minutes before serving — the filling sets and the flavour mellows. Spoon pan juices over each plate."
     ],
     "notes": "This is a starter recipe: swap herbs and spice levels to match how Jove seasons at home. You can add finely diced carrot to the filling for sweetness."
+  },
+  {
+    "slug": "sarma",
+    "image": "/recipies-photos/sarma.png",
+    "title": "Сарма (cabbage rolls)",
+    "description": "Fermented cabbage leaves wrapped around a rich meat-and-rice filling, slowly simmered to deep, comforting flavour.",
+    "region": "Balkan home cooking",
+    "prepMinutes": 40,
+    "cookMinutes": 120,
+    "servings": 6,
+    "tags": ["mains", "stewed", "comfort"],
+    "ingredients": [
+      { "amount": "1 large", "item": "pickled cabbage head, leaves separated" },
+      { "amount": "500 g", "item": "minced meat" },
+      { "amount": "100 g", "item": "rice" },
+      { "amount": "1", "item": "onion, chopped" },
+      { "amount": "2 tbsp", "item": "oil" },
+      { "item": "salt, pepper, paprika" },
+      { "amount": "200 g", "item": "smoked meat (optional)" }
+    ],
+    "steps": [
+      "Mix meat, rice, onion, oil, and spices.",
+      "Wrap filling in cabbage leaves.",
+      "Layer in pot with smoked meat.",
+      "Cover with water and simmer gently until tender."
+    ],
+    "notes": "Even better the next day."
+  },
+  {
+    "slug": "burek",
+    "image": "/recipies-photos/burek.png",
+    "title": "Бурек (burek)",
+    "description": "Crispy filo pastry layered or rolled with savoury fillings like meat or cheese.",
+    "region": "Bosnia / Macedonia / Serbia",
+    "prepMinutes": 30,
+    "cookMinutes": 45,
+    "servings": 4,
+    "tags": ["baked", "pastry"],
+    "ingredients": [
+      { "amount": "500 g", "item": "filo pastry" },
+      { "amount": "400 g", "item": "minced meat" },
+      { "amount": "1", "item": "onion" },
+      { "amount": "100 ml", "item": "oil" },
+      { "item": "salt, pepper" }
+    ],
+    "steps": [
+      "Cook onion and meat with spices.",
+      "Layer filo sheets with oil and filling.",
+      "Shape into spiral or tray.",
+      "Bake until golden."
+    ],
+    "notes": "Serve with yogurt."
+  },
+  {
+    "slug": "shopska-salad",
+    "image": "/recipies-photos/sopska-salata.png",
+    "title": "Шопска салата (shopska salad)",
+    "description": "Fresh tomato-cucumber salad topped with grated white cheese.",
+    "region": "Bulgaria / Macedonia",
+    "prepMinutes": 15,
+    "cookMinutes": 0,
+    "servings": 4,
+    "tags": ["salad", "fresh"],
+    "ingredients": [
+      { "amount": "3", "item": "tomatoes" },
+      { "amount": "1", "item": "cucumber" },
+      { "amount": "1", "item": "onion" },
+      { "amount": "150 g", "item": "white cheese (sirene/feta)" },
+      { "amount": "2 tbsp", "item": "oil" }
+    ],
+    "steps": [
+      "Chop vegetables.",
+      "Mix in bowl with oil.",
+      "Top with grated cheese."
+    ],
+    "notes": "Simple and refreshing."
+  },
+  {
+    "slug": "cevapi",
+    "image": "/recipies-photos/kebapi.png",
+    "title": "Ќебапи (cevapi)",
+    "description": "Grilled minced meat sausages served with flatbread and onions.",
+    "region": "Bosnia / Serbia",
+    "prepMinutes": 20,
+    "cookMinutes": 15,
+    "servings": 4,
+    "tags": ["grilled", "mains"],
+    "ingredients": [
+      { "amount": "500 g", "item": "minced beef" },
+      { "amount": "2 cloves", "item": "garlic" },
+      { "item": "salt, pepper" }
+    ],
+    "steps": [
+      "Mix ingredients and shape into small sausages.",
+      "Grill until cooked through.",
+      "Serve with bread and onions."
+    ],
+    "notes": "Best with ajvar."
+  },
+  {
+    "slug": "ajvar",
+    "image": "/recipies-photos/ajvar.png",
+    "title": "Ајвар (ajvar)",
+    "description": "Roasted red pepper spread, slightly smoky and rich.",
+    "region": "Balkan",
+    "prepMinutes": 60,
+    "cookMinutes": 60,
+    "servings": 6,
+    "tags": ["spread", "vegetarian"],
+    "ingredients": [
+      { "amount": "2 kg", "item": "red peppers" },
+      { "amount": "2", "item": "eggplants" },
+      { "amount": "100 ml", "item": "oil" },
+      { "item": "salt" }
+    ],
+    "steps": [
+      "Roast peppers and eggplants.",
+      "Peel and blend.",
+      "Cook with oil until thick."
+    ],
+    "notes": "Great as a spread or side."
+  },
+  {
+    "slug": "gibanica",
+    "image": "/recipies-photos/gibanica.png",
+    "title": "Гибаница (gibanica)",
+    "description": "Layered pastry with cheese and eggs.",
+    "region": "Serbia / Macedonia",
+    "prepMinutes": 25,
+    "cookMinutes": 40,
+    "servings": 6,
+    "tags": ["baked", "pastry"],
+    "ingredients": [
+      { "amount": "500 g", "item": "filo pastry" },
+      { "amount": "400 g", "item": "white cheese" },
+      { "amount": "3", "item": "eggs" }
+    ],
+    "steps": ["Mix cheese and eggs.", "Layer with filo.", "Bake until golden."],
+    "notes": "Soft inside, crispy outside."
+  },
+  {
+    "slug": "Грав",
+    "image": "/recipies-photos/grav.png",
+    "title": "Грав (bean stew)",
+    "description": "Hearty bean stew often cooked with smoked meat.",
+    "region": "Serbia / Macedonia",
+    "prepMinutes": 15,
+    "cookMinutes": 120,
+    "servings": 5,
+    "tags": ["stew", "comfort"],
+    "ingredients": [
+      { "amount": "400 g", "item": "beans" },
+      { "amount": "1", "item": "onion" },
+      { "amount": "200 g", "item": "smoked meat" }
+    ],
+    "steps": [
+      "Soak beans overnight.",
+      "Cook with onion and meat.",
+      "Season and simmer."
+    ],
+    "notes": "Classic winter dish."
+  },
+  {
+    "slug": "musaka",
+    "image": "/recipies-photos/musaka.png",
+    "title": "Мусака (moussaka)",
+    "description": "Layered potato and minced meat bake.",
+    "region": "Balkan",
+    "prepMinutes": 30,
+    "cookMinutes": 60,
+    "servings": 4,
+    "tags": ["baked", "mains"],
+    "ingredients": [
+      { "amount": "500 g", "item": "potatoes" },
+      { "amount": "400 g", "item": "minced meat" },
+      { "amount": "2", "item": "eggs" }
+    ],
+    "steps": [
+      "Layer potatoes and meat.",
+      "Bake until tender.",
+      "Pour egg mixture and finish baking."
+    ],
+    "notes": "Different from Greek version."
+  },
+  {
+    "slug": "tarator",
+    "image": "/recipies-photos/taratur.png",
+    "title": "Таратор (tarator)",
+    "description": "Cold yogurt and cucumber soup.",
+    "region": "Bulgaria / Macedonia",
+    "prepMinutes": 10,
+    "cookMinutes": 0,
+    "servings": 4,
+    "tags": ["soup", "cold"],
+    "ingredients": [
+      { "amount": "500 ml", "item": "yogurt" },
+      { "amount": "1", "item": "cucumber" },
+      { "amount": "2 cloves", "item": "garlic" }
+    ],
+    "steps": [
+      "Mix yogurt with water.",
+      "Add cucumber and garlic.",
+      "Chill before serving."
+    ],
+    "notes": "Perfect for summer."
+  },
+  {
+    "slug": "baklava",
+    "image": "/recipies-photos/baklava.png",
+    "title": "Баклава (baklava)",
+    "description": "Sweet layered pastry with nuts and syrup.",
+    "region": "Balkan / Ottoman",
+    "prepMinutes": 40,
+    "cookMinutes": 50,
+    "servings": 8,
+    "tags": ["dessert", "sweet"],
+    "ingredients": [
+      { "amount": "500 g", "item": "filo pastry" },
+      { "amount": "300 g", "item": "walnuts" },
+      { "amount": "200 g", "item": "sugar" }
+    ],
+    "steps": [
+      "Layer filo with nuts.",
+      "Bake until golden.",
+      "Pour syrup over."
+    ],
+    "notes": "Let it soak overnight."
   }
 ]

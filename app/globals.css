@@ -53,42 +53,44 @@
     --color-nude: #f2d3bc;
     --color-blob: #f2d3bc;
     --color-nude-deep: color-mix(in srgb, var(--color-nude) 20%, #000 80%);
+    /* Warm charcoal page (default theme) */
+    --color-page: #3b3532;
 
-    --page-highlight: color-mix(in srgb, var(--color-blob) 18%, var(--color-white));
-    --page-side-glow: color-mix(in srgb, var(--color-blob) 12%, var(--color-white));
-    --background: var(--color-white);
-    --background-b: var(--color-white);
-    --foreground: var(--color-nude-deep);
-    --card: var(--color-white);
-    --card-foreground: var(--color-nude-deep);
-    --popover: var(--color-white);
-    --popover-foreground: var(--color-nude-deep);
+    --page-highlight: color-mix(in srgb, var(--color-blob) 22%, var(--color-page));
+    --page-side-glow: color-mix(in srgb, var(--color-blob) 15%, var(--color-page));
+    --background: var(--color-page);
+    --background-b: color-mix(in srgb, var(--color-page) 90%, #000 10%);
+    --foreground: #f5f0ee;
+    --card: color-mix(in srgb, var(--color-nude) 32%, #000 68%);
+    --card-foreground: #f5f0ee;
+    --popover: color-mix(in srgb, var(--color-nude) 32%, #000 68%);
+    --popover-foreground: #f5f0ee;
     --primary: var(--color-nude);
     --primary-foreground: var(--color-nude-deep);
-    --secondary: color-mix(in srgb, var(--color-white) 50%, var(--color-nude));
-    --secondary-foreground: var(--color-nude-deep);
-    --muted: color-mix(in srgb, var(--color-white) 38%, var(--color-nude));
-    --muted-foreground: color-mix(in srgb, var(--color-nude) 50%, #000 50%);
-    --accent: color-mix(in srgb, var(--color-white) 32%, var(--color-nude));
-    --accent-foreground: var(--color-nude-deep);
-    --destructive: color-mix(in srgb, var(--color-nude) 25%, #000 75%);
-    --border: color-mix(in srgb, var(--color-nude) 35%, var(--color-white));
-    --input: color-mix(in srgb, var(--color-white) 80%, var(--color-nude));
-    --ring: color-mix(in srgb, var(--color-nude) 55%, #000 45%);
-    --chart-1: var(--color-nude);
-    --chart-2: color-mix(in srgb, var(--color-nude) 75%, var(--color-white));
-    --chart-3: var(--color-white);
-    --chart-4: color-mix(in srgb, var(--color-nude) 50%, var(--color-white));
-    --chart-5: color-mix(in srgb, var(--color-nude) 88%, var(--color-white));
+    --secondary: color-mix(in srgb, var(--color-nude) 28%, #000 72%);
+    --secondary-foreground: #f0eae7;
+    --muted: color-mix(in srgb, var(--color-nude) 25%, #000 75%);
+    --muted-foreground: color-mix(in srgb, #f5f0ee 65%, var(--color-nude) 35%);
+    --accent: color-mix(in srgb, var(--color-nude) 35%, #000 65%);
+    --accent-foreground: #f5f0ee;
+    --destructive: color-mix(in srgb, var(--color-nude) 50%, #fff 50%);
+    --border: color-mix(in srgb, #f0e0dc 12%, #000 88%);
+    --input: color-mix(in srgb, var(--color-nude) 30%, #000 70%);
+    --ring: color-mix(in srgb, var(--color-nude) 70%, #fff 30%);
+    --chart-1: #f0e3df;
+    --chart-2: var(--color-nude);
+    --chart-3: #d4c2bc;
+    --chart-4: color-mix(in srgb, var(--color-nude) 60%, #fff 40%);
+    --chart-5: #a08f89;
     --radius: 0.625rem;
-    --sidebar: var(--color-white);
-    --sidebar-foreground: var(--color-nude-deep);
-    --sidebar-primary: var(--color-nude);
-    --sidebar-primary-foreground: var(--color-nude-deep);
-    --sidebar-accent: color-mix(in srgb, var(--color-white) 50%, var(--color-nude));
-    --sidebar-accent-foreground: var(--color-nude-deep);
-    --sidebar-border: color-mix(in srgb, var(--color-nude) 22%, var(--color-white));
-    --sidebar-ring: var(--color-nude);
+    --sidebar: color-mix(in srgb, var(--color-nude) 18%, #000 82%);
+    --sidebar-foreground: #f5f0ee;
+    --sidebar-primary: color-mix(in srgb, var(--color-nude) 75%, #fff 25%);
+    --sidebar-primary-foreground: color-mix(in srgb, var(--color-nude) 12%, #000 88%);
+    --sidebar-accent: color-mix(in srgb, var(--color-nude) 28%, #000 72%);
+    --sidebar-accent-foreground: #f5f0ee;
+    --sidebar-border: color-mix(in srgb, #e8d8d4 8%, #000 92%);
+    --sidebar-ring: color-mix(in srgb, var(--color-nude) 70%, #fff 30%);
 }
 
 /* Dark: deep nude field, off-white type */
@@ -150,6 +152,13 @@
   html:not(.dark) body {
     @apply min-h-svh text-foreground antialiased;
     background-color: var(--background);
+    background-image: radial-gradient(
+        ellipse 120% 80% at 50% -20%,
+        var(--page-highlight),
+        transparent 58%
+      ),
+      radial-gradient(ellipse 70% 60% at 100% 0%, var(--page-side-glow), transparent 45%),
+      linear-gradient(168deg, var(--background) 0%, var(--background) 42%, var(--background-b) 100%);
   }
   html.dark body {
     @apply min-h-svh text-foreground antialiased;
