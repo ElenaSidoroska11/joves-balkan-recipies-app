@@ -4,9 +4,9 @@ import Link from "next/link"
 import Image from "@/lib/next-image"
 
 import { Button } from "@/components/ui/button"
+import { HomeRecipesPreview } from "@/app/home-recipes-preview"
 import { jovePhotos } from "@/lib/jove-photos"
 import { getAllRecipes } from "@/lib/recipes"
-import { publicPath } from "@/lib/utils"
 
 export const metadata: Metadata = {
   title: { absolute: "Jove’s Balkan recipes" },
@@ -140,44 +140,7 @@ export default function HomePage() {
                 <Link href="/recipes">All recipes</Link>
               </Button>
             </div>
-            <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {recipePreview.map((recipe) => (
-                <li key={recipe.slug}>
-                  <Link
-                    href={`/recipes/${recipe.slug}`}
-                    className="group flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-border/50 bg-white/50 shadow-sm ring-1 ring-foreground/3 transition duration-300 hover:-translate-y-0.5 hover:border-border hover:shadow-md"
-                  >
-                    {recipe.image && (
-                      <div className="relative aspect-4/3 w-full overflow-hidden border-b border-border/40 bg-muted/30">
-                        <Image
-                          src={publicPath(recipe.image)}
-                          alt={recipe.title}
-                          fill
-                          className="object-cover transition duration-300 group-hover:scale-[1.02]"
-                          sizes="(max-width: 1024px) 100vw, 33vw"
-                        />
-                      </div>
-                    )}
-                    <div className="flex flex-1 flex-col justify-between p-5">
-                      <div>
-                        <h3 className="text-base leading-snug font-medium text-foreground group-hover:underline group-hover:decoration-primary/50 group-hover:underline-offset-2">
-                          {recipe.title}
-                        </h3>
-                        <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-muted-foreground">
-                          {recipe.description}
-                        </p>
-                      </div>
-                      {recipe.prepMinutes != null &&
-                        recipe.cookMinutes != null && (
-                          <p className="mt-4 text-xs text-muted-foreground/90">
-                            ~{recipe.prepMinutes + recipe.cookMinutes} min
-                          </p>
-                        )}
-                    </div>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <HomeRecipesPreview recipes={recipePreview} />
           </div>
         </section>
       )}
