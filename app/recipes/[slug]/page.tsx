@@ -7,6 +7,7 @@ import { getAllRecipeSlugs, getRecipeBySlug } from "@/lib/recipes"
 import { publicPath } from "@/lib/utils"
 
 import type { Metadata } from "next"
+import { ArrowLeft } from "lucide-react"
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -50,15 +51,17 @@ export default async function RecipePage({ params }: Props) {
 
   return (
     <article className="mx-auto max-w-3xl px-6 py-10">
-      <p className="text-sm text-muted-foreground">
-        <Link
-          href="/recipes"
-          className="underline-offset-4 hover:text-foreground hover:underline"
-        >
-          All recipes
+      <p className="flex text-sm text-muted-foreground">
+        <Link href="/recipes">
+          <div className="flex space-x-1">
+            <ArrowLeft className="size-4" />
+            <p>All recipes</p>
+          </div>
         </Link>
       </p>
-      <h1 className="mt-3 text-3xl font-medium tracking-tight md:text-4xl">{recipe.title}</h1>
+      <h1 className="mt-3 text-3xl font-medium tracking-tight md:text-4xl">
+        {recipe.title}
+      </h1>
 
       {recipe.image && (
         <div className="relative mt-6 aspect-4/3 w-full max-w-2xl overflow-hidden rounded-xl border border-border/60 bg-muted/30 shadow-sm">
@@ -80,7 +83,9 @@ export default async function RecipePage({ params }: Props) {
       <dl className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground">
         {recipe.region && (
           <div>
-            <dt className="inline font-medium text-foreground/80">Region / style</dt>{" "}
+            <dt className="inline font-medium text-foreground/80">
+              Region / style
+            </dt>{" "}
             <dd className="inline">{recipe.region}</dd>
           </div>
         )}
@@ -92,11 +97,15 @@ export default async function RecipePage({ params }: Props) {
         )}
         {totalTime != null && totalTime > 0 && (
           <div>
-            <dt className="inline font-medium text-foreground/80">Active time (approx.)</dt>{" "}
+            <dt className="inline font-medium text-foreground/80">
+              Active time (approx.)
+            </dt>{" "}
             <dd className="inline">
               {[
-                recipe.prepMinutes != null && `prep ${formatTime(recipe.prepMinutes)}`,
-                recipe.cookMinutes != null && `cook ${formatTime(recipe.cookMinutes)}`,
+                recipe.prepMinutes != null &&
+                  `prep ${formatTime(recipe.prepMinutes)}`,
+                recipe.cookMinutes != null &&
+                  `cook ${formatTime(recipe.cookMinutes)}`,
               ]
                 .filter(Boolean)
                 .join(" · ")}
@@ -123,7 +132,9 @@ export default async function RecipePage({ params }: Props) {
         <ul className="mt-3 list-inside list-disc space-y-1.5 text-sm leading-relaxed">
           {recipe.ingredients.map((ing, i) => (
             <li key={i}>
-              {ing.amount && <span className="text-muted-foreground">{ing.amount} </span>}
+              {ing.amount && (
+                <span className="text-muted-foreground">{ing.amount} </span>
+              )}
               {ing.item}
             </li>
           ))}
@@ -142,7 +153,9 @@ export default async function RecipePage({ params }: Props) {
       {recipe.notes && (
         <section className="mt-10 rounded-lg border border-border bg-muted/40 p-4">
           <h2 className="text-sm font-medium">Notes from the kitchen</h2>
-          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{recipe.notes}</p>
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+            {recipe.notes}
+          </p>
         </section>
       )}
     </article>
