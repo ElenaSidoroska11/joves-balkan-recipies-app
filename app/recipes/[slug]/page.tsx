@@ -51,14 +51,13 @@ export default async function RecipePage({ params }: Props) {
 
   return (
     <article className="mx-auto max-w-3xl px-6 py-10">
-      <p className="flex text-sm text-muted-foreground">
-        <Link href="/recipes">
-          <div className="flex space-x-1">
-            <ArrowLeft className="size-4" />
-            <p>All recipes</p>
-          </div>
-        </Link>
-      </p>
+      <Link
+        href="/recipes"
+        className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
+      >
+        <ArrowLeft className="size-4 shrink-0" aria-hidden />
+        <span>All recipes</span>
+      </Link>
       <h1 className="mt-3 text-3xl font-medium tracking-tight md:text-4xl">
         {recipe.title}
       </h1>
