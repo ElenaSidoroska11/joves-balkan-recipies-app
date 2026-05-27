@@ -11,11 +11,26 @@
     "servings": 6,
     "tags": ["baked", "mains", "pasta"],
     "ingredients": [
-      { "amount": "500 g", "item": "minced meat" },
-      { "amount": "1 pack", "item": "lasagna sheets" },
-      { "amount": "500 ml", "item": "tomato sauce" },
-      { "amount": "300 g", "item": "mozzarella cheese" },
-      { "amount": "500 ml", "item": "béchamel sauce" }
+      {
+        "amount": "500 g",
+        "item": "minced meat"
+      },
+      {
+        "amount": "1 pack",
+        "item": "lasagna sheets"
+      },
+      {
+        "amount": "500 ml",
+        "item": "tomato sauce"
+      },
+      {
+        "amount": "300 g",
+        "item": "mozzarella cheese"
+      },
+      {
+        "amount": "500 ml",
+        "item": "béchamel sauce"
+      }
     ],
     "steps": [
       "Cook minced meat with tomato sauce.",
@@ -23,7 +38,41 @@
       "Repeat layers until tray is full.",
       "Bake until golden and bubbling."
     ],
-    "notes": "Let it rest 10 minutes before cutting."
+    "notes": "Let it rest 10 minutes before cutting.",
+    "localeMk": {
+      "description": "Слоеви од тестенини, богат сос од месо, кремаст бешамел и топено сирење печени додека не поруменат и прокрчкаат.",
+      "region": "Италија",
+      "tags": ["печени", "главно јадење", "тестенини"],
+      "ingredients": [
+        {
+          "amount": "500 g",
+          "item": "мелено месо"
+        },
+        {
+          "amount": "1 pack",
+          "item": "листови за лазања"
+        },
+        {
+          "amount": "500 ml",
+          "item": "сос од домати"
+        },
+        {
+          "amount": "300 g",
+          "item": "сирење моцарела"
+        },
+        {
+          "amount": "500 ml",
+          "item": "бешамел сос"
+        }
+      ],
+      "steps": [
+        "Гответе мелено месо со сос од домати.",
+        "На листови лазања ставете сос од месо, бешамел и сирење.",
+        "Повторете ги слоевите додека садот не се наполни.",
+        "Печете додека не поруменат и прокрчкаат."
+      ],
+      "notes": "Оставете го да одмори 10 минути пред да го исечете."
+    }
   },
   {
     "slug": "pastrmajlija",
@@ -37,10 +86,21 @@
     "servings": 4,
     "tags": ["baked", "mains"],
     "ingredients": [
-      { "amount": "500 g", "item": "bread dough" },
-      { "amount": "400 g", "item": "pork or chicken meat, diced" },
-      { "amount": "2", "item": "eggs" },
-      { "item": "salt, pepper, paprika" }
+      {
+        "amount": "500 g",
+        "item": "bread dough"
+      },
+      {
+        "amount": "400 g",
+        "item": "pork or chicken meat, diced"
+      },
+      {
+        "amount": "2",
+        "item": "eggs"
+      },
+      {
+        "item": "salt, pepper, paprika"
+      }
     ],
     "steps": [
       "Shape dough into oval forms.",
@@ -48,7 +108,36 @@
       "Bake until crust is golden.",
       "Add eggs near the end of baking if desired."
     ],
-    "notes": "Best served hot with yogurt."
+    "notes": "Best served hot with yogurt.",
+    "localeMk": {
+      "description": "Традиционален македонски овален леб, прелиен со зачинето месо исечено на коцки и печено додека не стане крцкаво.",
+      "region": "Македонија",
+      "tags": ["печено", "главно јадење"],
+      "ingredients": [
+        {
+          "amount": "500 g",
+          "item": "тесто за леб"
+        },
+        {
+          "amount": "400 g",
+          "item": "свинско или пилешко месо, исечено на коцки"
+        },
+        {
+          "amount": "2",
+          "item": "јајца"
+        },
+        {
+          "item": "сол, бибер, пиперка"
+        }
+      ],
+      "steps": [
+        "Обликувајте го тестото во овални форми.",
+        "Одозгора ставете зачинето месо исечено на коцки.",
+        "Печете додека кората не порумени.",
+        "По желба додајте ги јајцата при крајот на печењето."
+      ],
+      "notes": "Најдобро се служи топло со јогурт."
+    }
   },
   {
     "slug": "musli",
@@ -62,11 +151,26 @@
     "servings": 1,
     "tags": ["breakfast", "sweet"],
     "ingredients": [
-      { "amount": "80 g", "item": "muesli" },
-      { "amount": "1", "item": "banana" },
-      { "amount": "4", "item": "strawberries" },
-      { "amount": "30 g", "item": "chocolate pieces" },
-      { "amount": "200 ml", "item": "milk or yogurt" }
+      {
+        "amount": "80 g",
+        "item": "muesli"
+      },
+      {
+        "amount": "1",
+        "item": "banana"
+      },
+      {
+        "amount": "4",
+        "item": "strawberries"
+      },
+      {
+        "amount": "30 g",
+        "item": "chocolate pieces"
+      },
+      {
+        "amount": "200 ml",
+        "item": "milk or yogurt"
+      }
     ],
     "steps": [
       "Add muesli into a bowl.",
@@ -74,7 +178,41 @@
       "Add sliced banana and chocolate.",
       "Place strawberries on top."
     ],
-    "notes": "You can use dark or milk chocolate."
+    "notes": "You can use dark or milk chocolate.",
+    "localeMk": {
+      "description": "Сад за појадок со крцкави мусли, парчиња банана, парчиња чоколада и јагоди одозгора.",
+      "region": "Модерен појадок",
+      "tags": ["појадок", "слатко"],
+      "ingredients": [
+        {
+          "amount": "80 g",
+          "item": "мусли"
+        },
+        {
+          "amount": "1",
+          "item": "банана"
+        },
+        {
+          "amount": "4",
+          "item": "јагоди"
+        },
+        {
+          "amount": "30 g",
+          "item": "парчиња чоколада"
+        },
+        {
+          "amount": "200 ml",
+          "item": "млеко или јогурт"
+        }
+      ],
+      "steps": [
+        "Додадете мусли во сад.",
+        "Прелијте го со млеко или јогурт.",
+        "Додадете сечкана банана и чоколадо.",
+        "Одозгора ставете јагоди."
+      ],
+      "notes": "Можете да користите темно или млечно чоколадо."
+    }
   },
   {
     "slug": "spageti",
@@ -88,10 +226,22 @@
     "servings": 4,
     "tags": ["pasta", "mains"],
     "ingredients": [
-      { "amount": "400 g", "item": "spaghetti" },
-      { "amount": "500 ml", "item": "tomato sauce" },
-      { "amount": "300 g", "item": "chicken, pork, or beef" },
-      { "amount": "2 cloves", "item": "garlic" }
+      {
+        "amount": "400 g",
+        "item": "spaghetti"
+      },
+      {
+        "amount": "500 ml",
+        "item": "tomato sauce"
+      },
+      {
+        "amount": "300 g",
+        "item": "chicken, pork, or beef"
+      },
+      {
+        "amount": "2 cloves",
+        "item": "garlic"
+      }
     ],
     "steps": [
       "Cook spaghetti until al dente.",
@@ -99,7 +249,37 @@
       "Grill or roast meat separately.",
       "Serve spaghetti with sauce and meat on top."
     ],
-    "notes": "Parmesan cheese goes great on top."
+    "notes": "Parmesan cheese goes great on top.",
+    "localeMk": {
+      "description": "Класични шпагети сервирани со богат сос од домати и прелиени со печено месо по избор.",
+      "region": "Италијански инспириран",
+      "tags": ["тестенини", "главно јадење"],
+      "ingredients": [
+        {
+          "amount": "400 g",
+          "item": "шпагети"
+        },
+        {
+          "amount": "500 ml",
+          "item": "сос од домати"
+        },
+        {
+          "amount": "300 g",
+          "item": "пилешко, свинско или говедско месо"
+        },
+        {
+          "amount": "2 главици",
+          "item": "лук"
+        }
+      ],
+      "steps": [
+        "Гответе шпагети до омекнување.",
+        "Подгответе сос од домати со лук и зачини.",
+        "Месо на скара или печено посебно.",
+        "Послужете шпагети со сос и месо одозгора."
+      ],
+      "notes": "Одозгора одлично оди пармезан."
+    }
   },
   {
     "slug": "rebro",
@@ -113,10 +293,21 @@
     "servings": 4,
     "tags": ["baked", "mains"],
     "ingredients": [
-      { "amount": "1 kg", "item": "pork ribs" },
-      { "amount": "700 g", "item": "potatoes, cubed" },
-      { "amount": "3 tbsp", "item": "oil" },
-      { "item": "salt, pepper, paprika" }
+      {
+        "amount": "1 kg",
+        "item": "pork ribs"
+      },
+      {
+        "amount": "700 g",
+        "item": "potatoes, cubed"
+      },
+      {
+        "amount": "3 tbsp",
+        "item": "oil"
+      },
+      {
+        "item": "salt, pepper, paprika"
+      }
     ],
     "steps": [
       "Season ribs and potatoes.",
@@ -124,7 +315,36 @@
       "Bake until ribs are tender and potatoes crispy.",
       "Turn once during baking."
     ],
-    "notes": "Serve with fresh salad."
+    "notes": "Serve with fresh salad.",
+    "localeMk": {
+      "description": "Бавно печени ребра со крцкави зачинети коцки компир печени заедно во рерна.",
+      "region": "Балканско домашно готвење",
+      "tags": ["печено", "главно јадење"],
+      "ingredients": [
+        {
+          "amount": "1 kg",
+          "item": "свинско ребра"
+        },
+        {
+          "amount": "700 g",
+          "item": "компири, на коцки"
+        },
+        {
+          "amount": "3 лажици",
+          "item": "масло"
+        },
+        {
+          "item": "сол, бибер, пиперка"
+        }
+      ],
+      "steps": [
+        "Зачинете ги ребрата и компирите.",
+        "Се ставаат во плех со масло.",
+        "Печете додека ребрата не станат меки, а компирите не станат крцкави.",
+        "Завртете еднаш за време на печењето."
+      ],
+      "notes": "Послужете со свежа салата."
+    }
   },
   {
     "slug": "makaroni-bolonjeze",
@@ -138,10 +358,22 @@
     "servings": 4,
     "tags": ["pasta", "mains"],
     "ingredients": [
-      { "amount": "400 g", "item": "macaroni" },
-      { "amount": "400 g", "item": "minced meat" },
-      { "amount": "500 ml", "item": "tomato sauce" },
-      { "amount": "1", "item": "onion" }
+      {
+        "amount": "400 g",
+        "item": "macaroni"
+      },
+      {
+        "amount": "400 g",
+        "item": "minced meat"
+      },
+      {
+        "amount": "500 ml",
+        "item": "tomato sauce"
+      },
+      {
+        "amount": "1",
+        "item": "onion"
+      }
     ],
     "steps": [
       "Cook macaroni until soft.",
@@ -149,7 +381,37 @@
       "Add tomato sauce and simmer.",
       "Mix with macaroni and serve."
     ],
-    "notes": "Top with grated cheese if desired."
+    "notes": "Top with grated cheese if desired.",
+    "localeMk": {
+      "description": "Тестенини прекриени со богат сос од домати од мелено месо полека варени за длабок вкус.",
+      "region": "Италија",
+      "tags": ["тестенини", "главно јадење"],
+      "ingredients": [
+        {
+          "amount": "400 g",
+          "item": "макарони"
+        },
+        {
+          "amount": "400 g",
+          "item": "мелено месо"
+        },
+        {
+          "amount": "500 ml",
+          "item": "сос од домати"
+        },
+        {
+          "amount": "1",
+          "item": "кромид"
+        }
+      ],
+      "steps": [
+        "Варете ги макароните додека не омекнат.",
+        "Гответе кромид и мелено месо.",
+        "Додадете сос од домати и динстајте.",
+        "Се меша со макарони и се сервира."
+      ],
+      "notes": "По желба одозгора со рендано сирење."
+    }
   },
   {
     "slug": "pizza",
@@ -163,10 +425,21 @@
     "servings": 4,
     "tags": ["baked", "pizza"],
     "ingredients": [
-      { "amount": "500 g", "item": "pizza dough" },
-      { "amount": "200 ml", "item": "tomato sauce" },
-      { "amount": "300 g", "item": "mozzarella cheese" },
-      { "item": "toppings of choice" }
+      {
+        "amount": "500 g",
+        "item": "pizza dough"
+      },
+      {
+        "amount": "200 ml",
+        "item": "tomato sauce"
+      },
+      {
+        "amount": "300 g",
+        "item": "mozzarella cheese"
+      },
+      {
+        "item": "toppings of choice"
+      }
     ],
     "steps": [
       "Roll out pizza dough.",
@@ -174,7 +447,36 @@
       "Add toppings.",
       "Bake until crust is crispy."
     ],
-    "notes": "Best baked in a very hot oven."
+    "notes": "Best baked in a very hot oven.",
+    "localeMk": {
+      "description": "Домашна пица со топено сирење, сос од домати и додатоци по избор печени на крцкаво тесто.",
+      "region": "Италија",
+      "tags": ["печено", "пица"],
+      "ingredients": [
+        {
+          "amount": "500 g",
+          "item": "тесто за пица"
+        },
+        {
+          "amount": "200 ml",
+          "item": "сос од домати"
+        },
+        {
+          "amount": "300 g",
+          "item": "сирење моцарела"
+        },
+        {
+          "item": "преливи по избор"
+        }
+      ],
+      "steps": [
+        "Расукајте го тестото за пица.",
+        "Намачкајте сос од домати и сирење.",
+        "Додадете додатоци.",
+        "Печете додека кората не стане крцкава."
+      ],
+      "notes": "Најдобро е да се пече во многу топла рерна."
+    }
   },
   {
     "slug": "hamburger",
@@ -188,10 +490,21 @@
     "servings": 2,
     "tags": ["burger", "grilled"],
     "ingredients": [
-      { "amount": "300 g", "item": "ground beef" },
-      { "amount": "2", "item": "burger buns" },
-      { "amount": "2 slices", "item": "cheese" },
-      { "item": "lettuce, tomato, onion" }
+      {
+        "amount": "300 g",
+        "item": "ground beef"
+      },
+      {
+        "amount": "2",
+        "item": "burger buns"
+      },
+      {
+        "amount": "2 slices",
+        "item": "cheese"
+      },
+      {
+        "item": "lettuce, tomato, onion"
+      }
     ],
     "steps": [
       "Shape and season burger patties.",
@@ -199,7 +512,36 @@
       "Assemble buns with vegetables and cheese.",
       "Serve warm."
     ],
-    "notes": "Add fries on the side for a full meal."
+    "notes": "Add fries on the side for a full meal.",
+    "localeMk": {
+      "description": "Сочна плескавица на скара послужена во мека лајбица со свеж зеленчук и сосови.",
+      "region": "Американски стил",
+      "tags": ["плескавица", "на скара"],
+      "ingredients": [
+        {
+          "amount": "300 g",
+          "item": "мелено говедско месо"
+        },
+        {
+          "amount": "2",
+          "item": "лајбици за плескавица"
+        },
+        {
+          "amount": "2 парчина",
+          "item": "кашкавал"
+        },
+        {
+          "item": "зелена салата, домат, кромид"
+        }
+      ],
+      "steps": [
+        "Обликувајте и зачинете ја смесата за плескавица.",
+        "Гответе на скара или тава.",
+        "Ставете на лепчето зеленчук и кашкавал.",
+        "Послужете топло."
+      ],
+      "notes": "Додадете помфрит на страна за целосен оброк."
+    }
   },
   {
     "slug": "morsko-makaroni",
@@ -213,10 +555,22 @@
     "servings": 4,
     "tags": ["seafood", "pasta"],
     "ingredients": [
-      { "amount": "400 g", "item": "macaroni" },
-      { "amount": "300 g", "item": "seafood mix" },
-      { "amount": "400 ml", "item": "tomato sauce" },
-      { "amount": "2 cloves", "item": "garlic" }
+      {
+        "amount": "400 g",
+        "item": "macaroni"
+      },
+      {
+        "amount": "300 g",
+        "item": "seafood mix"
+      },
+      {
+        "amount": "400 ml",
+        "item": "tomato sauce"
+      },
+      {
+        "amount": "2 cloves",
+        "item": "garlic"
+      }
     ],
     "steps": [
       "Cook pasta until ready.",
@@ -224,7 +578,37 @@
       "Add tomato sauce and simmer.",
       "Mix with pasta and serve."
     ],
-    "notes": "Best with shrimp and mussels."
+    "notes": "Best with shrimp and mussels.",
+    "localeMk": {
+      "description": "Тестенини со морска храна измешани во лесен сос од домати со лук.",
+      "region": "Медитеранот",
+      "tags": ["морска храна", "тестенини"],
+      "ingredients": [
+        {
+          "amount": "400 g",
+          "item": "макарони"
+        },
+        {
+          "amount": "300 g",
+          "item": "мешавина од морска храна"
+        },
+        {
+          "amount": "400 ml",
+          "item": "сос од домати"
+        },
+        {
+          "amount": "2 главици",
+          "item": "лук"
+        }
+      ],
+      "steps": [
+        "Гответе ги тестенините додека не се омекнат.",
+        "Гответе го лукот и морските плодови накратко.",
+        "Додадете сос од домати и динстајте.",
+        "Се меша со тестенините и се сервира."
+      ],
+      "notes": "Најдобро е со ракчиња и школки."
+    }
   },
   {
     "slug": "letna-mandza",
@@ -238,10 +622,22 @@
     "servings": 3,
     "tags": ["vegetarian", "summer"],
     "ingredients": [
-      { "amount": "1", "item": "eggplant" },
-      { "amount": "2", "item": "peppers" },
-      { "amount": "3", "item": "eggs" },
-      { "amount": "150 g", "item": "urda cheese" }
+      {
+        "amount": "1",
+        "item": "eggplant"
+      },
+      {
+        "amount": "2",
+        "item": "peppers"
+      },
+      {
+        "amount": "3",
+        "item": "eggs"
+      },
+      {
+        "amount": "150 g",
+        "item": "urda cheese"
+      }
     ],
     "steps": [
       "Cook chopped vegetables until soft.",
@@ -249,7 +645,37 @@
       "Mix in urda cheese.",
       "Cook briefly and serve warm."
     ],
-    "notes": "Perfect with fresh bread."
+    "notes": "Perfect with fresh bread.",
+    "localeMk": {
+      "description": "Лесно летно јадење со печени пиперки, модар патлиџан, јајца и меко сирење.",
+      "region": "Македонско домашно готвење",
+      "tags": ["вегетаријанско", "лето"],
+      "ingredients": [
+        {
+          "amount": "1",
+          "item": "модар патлиџан"
+        },
+        {
+          "amount": "2",
+          "item": "пиперки"
+        },
+        {
+          "amount": "3",
+          "item": "јајца"
+        },
+        {
+          "amount": "150 g",
+          "item": "сирење урда"
+        }
+      ],
+      "steps": [
+        "Гответе сецкан зеленчук додека не омекне.",
+        "Додадете јајца и нежно измешајте.",
+        "Се меша во сирењето урда.",
+        "Гответе кратко и послужете топло."
+      ],
+      "notes": "Совршено со свеж леб."
+    }
   },
   {
     "slug": "pire-meso",
@@ -261,12 +687,24 @@
     "prepMinutes": 20,
     "cookMinutes": 40,
     "servings": 4,
-    "tags": ["mains", "comfort-food"],
+    "tags": ["mains"],
     "ingredients": [
-      { "amount": "700 g", "item": "potatoes" },
-      { "amount": "300 g", "item": "meat of choice" },
-      { "amount": "50 g", "item": "butter" },
-      { "amount": "100 ml", "item": "milk" }
+      {
+        "amount": "700 g",
+        "item": "potatoes"
+      },
+      {
+        "amount": "300 g",
+        "item": "meat of choice"
+      },
+      {
+        "amount": "50 g",
+        "item": "butter"
+      },
+      {
+        "amount": "100 ml",
+        "item": "milk"
+      }
     ],
     "steps": [
       "Boil potatoes until soft.",
@@ -274,7 +712,37 @@
       "Cook meat separately.",
       "Serve meat over or beside the puree."
     ],
-    "notes": "Chicken or pork works especially well."
+    "notes": "Chicken or pork works especially well.",
+    "localeMk": {
+      "description": "Кремасто пире од компири послужени со пржено или печено месо по избор.",
+      "region": "Балканско домашно готвење",
+      "tags": ["главно јадење"],
+      "ingredients": [
+        {
+          "amount": "700 g",
+          "item": "компири"
+        },
+        {
+          "amount": "300 g",
+          "item": "месо по избор"
+        },
+        {
+          "amount": "50 g",
+          "item": "путер"
+        },
+        {
+          "amount": "100 ml",
+          "item": "млеко"
+        }
+      ],
+      "steps": [
+        "Варете ги компирите додека не омекнат.",
+        "Се пасира со путер и млеко.",
+        "Гответе го месото посебно.",
+        "Послужете го месото над или покрај пирето."
+      ],
+      "notes": "Пилешкото или свинското месо делуваат особено добро."
+    }
   },
   {
     "slug": "stuffed-peppers",
@@ -288,20 +756,41 @@
     "servings": 4,
     "tags": ["mains", "baked"],
     "ingredients": [
-      { "amount": "4 large", "item": "bell peppers, tops cut and seeded" },
+      {
+        "amount": "4 large",
+        "item": "bell peppers, tops cut and seeded"
+      },
       {
         "amount": "500 g",
         "item": "mixed minced meat (beef and pork, or as Jove uses)"
       },
-      { "amount": "150 g", "item": "long-grain rice, rinsed" },
-      { "amount": "1", "item": "onion, finely chopped" },
-      { "amount": "2 cloves", "item": "garlic, minced" },
-      { "amount": "400 g", "item": "passata or tinned tomatoes" },
-      { "amount": "500 ml", "item": "light stock" },
+      {
+        "amount": "150 g",
+        "item": "long-grain rice, rinsed"
+      },
+      {
+        "amount": "1",
+        "item": "onion, finely chopped"
+      },
+      {
+        "amount": "2 cloves",
+        "item": "garlic, minced"
+      },
+      {
+        "amount": "400 g",
+        "item": "passata or tinned tomatoes"
+      },
+      {
+        "amount": "500 ml",
+        "item": "light stock"
+      },
       {
         "item": "Salt, black pepper, sweet paprika, dried summer savoury (especially if you have it)"
       },
-      { "amount": "2 tbsp", "item": "oil" }
+      {
+        "amount": "2 tbsp",
+        "item": "oil"
+      }
     ],
     "steps": [
       "Sauté onion in oil until soft, add garlic for the last minute. Mix with mince, raw rice, paprika, salt, and pepper (and savoury if using). Lightly pack into hollowed peppers; replace caps if you kept them.",
@@ -309,7 +798,56 @@
       "Cover and bake in a moderate oven until peppers collapse and the rice is tender, basting once or twice. Uncover for the last stretch for a little colour on top.",
       "Rest 10 minutes before serving — the filling sets and the flavour mellows. Spoon pan juices over each plate."
     ],
-    "notes": "This is a starter recipe: swap herbs and spice levels to match how Jove seasons at home. You can add finely diced carrot to the filling for sweetness."
+    "notes": "This is a starter recipe: swap herbs and spice levels to match how Jove seasons at home. You can add finely diced carrot to the filling for sweetness.",
+    "localeMk": {
+      "description": "Слатки пиперки исполнети со солена мешавина од месо и ориз, бавно печени во сос од домати - омилена неделна трпеза низ Балканот.",
+      "region": "Балканско домашно готвење",
+      "tags": ["главно јадење", "печено"],
+      "ingredients": [
+        {
+          "amount": "4 големи",
+          "item": "бугарски пиперки, исечени врвови и со семе"
+        },
+        {
+          "amount": "500 g",
+          "item": "мешано мелено месо (говедско и свинско, или како што користи Јове)"
+        },
+        {
+          "amount": "150 g",
+          "item": "ориз со долго зрно, исплакнат"
+        },
+        {
+          "amount": "1",
+          "item": "кромид, ситно сецкан"
+        },
+        {
+          "amount": "2 главици",
+          "item": "лук, мелен"
+        },
+        {
+          "amount": "400 g",
+          "item": "паста или конзервирани домати"
+        },
+        {
+          "amount": "500 ml",
+          "item": "лесни акции"
+        },
+        {
+          "item": "Сол, црн пипер, слатка пиперка, сушена летна солена (особено ако ја имате)"
+        },
+        {
+          "amount": "2 лажици",
+          "item": "масло"
+        }
+      ],
+      "steps": [
+        "На масло пржете го кромидот додека да омекне, додадете лук во последната минута. Се меша со мелено месо, суров ориз, пиперка, сол и бибер (и солени ако користите). Лесно ставете ги во издлабените пиперки.",
+        "Ставете ги пиперките цврсто во длабок сад за печење. Истурете ја пастата наоколу (не преку филот за да не се измие).",
+        "Покријте и печете во умерена рерна додека не се срушат пиперките и оризот не омекне. Отскријте го за малку боја одозгора.",
+        "Оставете 10 минути пред сервирање. Над секоја чинија се истураат сокови од тавата."
+      ],
+      "notes": "Во филот можете да додадете ситно исечен морков за сладост."
+    }
   },
   {
     "slug": "sarma",
@@ -323,13 +861,33 @@
     "servings": 6,
     "tags": ["mains", "stewed"],
     "ingredients": [
-      { "amount": "1 large", "item": "pickled cabbage head, leaves separated" },
-      { "amount": "500 g", "item": "minced meat" },
-      { "amount": "100 g", "item": "rice" },
-      { "amount": "1", "item": "onion, chopped" },
-      { "amount": "2 tbsp", "item": "oil" },
-      { "item": "salt, pepper, paprika" },
-      { "amount": "200 g", "item": "smoked meat (optional)" }
+      {
+        "amount": "1 large",
+        "item": "pickled cabbage head, leaves separated"
+      },
+      {
+        "amount": "500 g",
+        "item": "minced meat"
+      },
+      {
+        "amount": "100 g",
+        "item": "rice"
+      },
+      {
+        "amount": "1",
+        "item": "onion, chopped"
+      },
+      {
+        "amount": "2 tbsp",
+        "item": "oil"
+      },
+      {
+        "item": "salt, pepper, paprika"
+      },
+      {
+        "amount": "200 g",
+        "item": "smoked meat (optional)"
+      }
     ],
     "steps": [
       "Mix meat, rice, onion, oil, and spices.",
@@ -337,7 +895,48 @@
       "Layer in pot with smoked meat.",
       "Cover with water and simmer gently until tender."
     ],
-    "notes": "Even better the next day."
+    "notes": "Even better the next day.",
+    "localeMk": {
+      "description": "Ферментирани листови зелка обвиткани со богат фил од месо и ориз, полека динстани за добар вкус.",
+      "region": "Балканско домашно готвење",
+      "tags": ["главно јадење", "задушени"],
+      "ingredients": [
+        {
+          "amount": "1 голема",
+          "item": "кисела зелка глава, листовите одвоени"
+        },
+        {
+          "amount": "500 g",
+          "item": "мелено месо"
+        },
+        {
+          "amount": "100 g",
+          "item": "оризот"
+        },
+        {
+          "amount": "1",
+          "item": "кромид, сецкан"
+        },
+        {
+          "amount": "2 лажици",
+          "item": "масло"
+        },
+        {
+          "item": "сол, бибер, пиперка"
+        },
+        {
+          "amount": "200 g",
+          "item": "чадено месо (по избор)"
+        }
+      ],
+      "steps": [
+        "Измешајте месо, ориз, кромид, масло и зачини.",
+        "Завиткајте фил во листови зелка.",
+        "Слој во тенџере со чадено месо.",
+        "Покријте со вода и варете полека додека не омекне."
+      ],
+      "notes": "Уште подобро да се јаде следниот ден."
+    }
   },
   {
     "slug": "burek",
@@ -351,11 +950,25 @@
     "servings": 4,
     "tags": ["baked", "pastry"],
     "ingredients": [
-      { "amount": "500 g", "item": "filo pastry" },
-      { "amount": "400 g", "item": "minced meat" },
-      { "amount": "1", "item": "onion" },
-      { "amount": "100 ml", "item": "oil" },
-      { "item": "salt, pepper" }
+      {
+        "amount": "500 g",
+        "item": "filo pastry"
+      },
+      {
+        "amount": "400 g",
+        "item": "minced meat"
+      },
+      {
+        "amount": "1",
+        "item": "onion"
+      },
+      {
+        "amount": "100 ml",
+        "item": "oil"
+      },
+      {
+        "item": "salt, pepper"
+      }
     ],
     "steps": [
       "Cook onion and meat with spices.",
@@ -363,7 +976,40 @@
       "Shape into spiral or tray.",
       "Bake until golden."
     ],
-    "notes": "Serve with yogurt."
+    "notes": "Serve with yogurt.",
+    "localeMk": {
+      "description": "Крцкаво пециво слоевито со солени филови како месо или сирење.",
+      "region": "Босна / Македонија / Србија",
+      "tags": ["печено", "пециво"],
+      "ingredients": [
+        {
+          "amount": "500 g",
+          "item": "кори"
+        },
+        {
+          "amount": "400 g",
+          "item": "мелено месо"
+        },
+        {
+          "amount": "1",
+          "item": "кромид"
+        },
+        {
+          "amount": "100 ml",
+          "item": "масло"
+        },
+        {
+          "item": "сол, бибер"
+        }
+      ],
+      "steps": [
+        "Гответе го кромидот и месото со зачини.",
+        "Намачкај ги листовите со масло и додај го филот.",
+        "Обликувајте ја кората во круг.",
+        "Печете додека не поруменат."
+      ],
+      "notes": "Послужете со јогурт."
+    }
   },
   {
     "slug": "ajvar",
@@ -375,19 +1021,58 @@
     "prepMinutes": 60,
     "cookMinutes": 60,
     "servings": 6,
-    "tags": ["spread", "vegetarian"],
+    "tags": ["vegetarian"],
     "ingredients": [
-      { "amount": "2 kg", "item": "red peppers" },
-      { "amount": "2", "item": "eggplants" },
-      { "amount": "100 ml", "item": "oil" },
-      { "item": "salt" }
+      {
+        "amount": "2 kg",
+        "item": "red peppers"
+      },
+      {
+        "amount": "2",
+        "item": "eggplants"
+      },
+      {
+        "amount": "100 ml",
+        "item": "oil"
+      },
+      {
+        "item": "salt"
+      }
     ],
     "steps": [
       "Roast peppers and eggplants.",
       "Peel and blend.",
       "Cook with oil until thick."
     ],
-    "notes": "Great as a spread or side."
+    "notes": "Great as a spread or side.",
+    "localeMk": {
+      "description": "Намаз од печен црвен пипер, малку зачаден и богат.",
+      "region": "балкански",
+      "tags": ["вегетаријанско"],
+      "ingredients": [
+        {
+          "amount": "2 kg",
+          "item": "црвени пиперки"
+        },
+        {
+          "amount": "2",
+          "item": "модри патлиџани"
+        },
+        {
+          "amount": "100 ml",
+          "item": "масло"
+        },
+        {
+          "item": "сол"
+        }
+      ],
+      "steps": [
+        "Печени пиперки и модри патлиџани.",
+        "Излупете и изблендирајте.",
+        "Гответе со масло додека не се згусне."
+      ],
+      "notes": "Одлично како намаз."
+    }
   },
   {
     "slug": "musaka",
@@ -401,16 +1086,50 @@
     "servings": 4,
     "tags": ["baked", "mains"],
     "ingredients": [
-      { "amount": "500 g", "item": "potatoes" },
-      { "amount": "400 g", "item": "minced meat" },
-      { "amount": "2", "item": "eggs" }
+      {
+        "amount": "500 g",
+        "item": "potatoes"
+      },
+      {
+        "amount": "400 g",
+        "item": "minced meat"
+      },
+      {
+        "amount": "2",
+        "item": "eggs"
+      }
     ],
     "steps": [
       "Layer potatoes and meat.",
       "Bake until tender.",
       "Pour egg mixture and finish baking."
     ],
-    "notes": "Different from Greek version."
+    "notes": "Different from Greek version.",
+    "localeMk": {
+      "description": "Слоевит компир и мелено месо се пече.",
+      "region": "балкански",
+      "tags": ["печено", "главно јадење"],
+      "ingredients": [
+        {
+          "amount": "500 g",
+          "item": "компири"
+        },
+        {
+          "amount": "400 g",
+          "item": "мелено месо"
+        },
+        {
+          "amount": "2",
+          "item": "јајца"
+        }
+      ],
+      "steps": [
+        "Слој компири и месо.",
+        "Печете додека не омекне.",
+        "Истурете ја смесата со јајца и завршете го печењето."
+      ],
+      "notes": "Различно од грчката верзија."
+    }
   },
   {
     "slug": "baklava",
@@ -424,15 +1143,49 @@
     "servings": 8,
     "tags": ["dessert", "sweet"],
     "ingredients": [
-      { "amount": "500 g", "item": "filo pastry" },
-      { "amount": "300 g", "item": "walnuts" },
-      { "amount": "200 g", "item": "sugar" }
+      {
+        "amount": "500 g",
+        "item": "filo pastry"
+      },
+      {
+        "amount": "300 g",
+        "item": "walnuts"
+      },
+      {
+        "amount": "200 g",
+        "item": "sugar"
+      }
     ],
     "steps": [
       "Layer filo with nuts.",
       "Bake until golden.",
       "Pour syrup over."
     ],
-    "notes": "Let it soak overnight."
+    "notes": "Let it soak overnight.",
+    "localeMk": {
+      "description": "Слатко слоевито со јаткасти плодови и сируп.",
+      "region": "балкански / отомански",
+      "tags": ["десерт", "слатко"],
+      "ingredients": [
+        {
+          "amount": "500 g",
+          "item": "кори"
+        },
+        {
+          "amount": "300 g",
+          "item": "ореви"
+        },
+        {
+          "amount": "200 g",
+          "item": "шеќер"
+        }
+      ],
+      "steps": [
+        "Повеќе слоеви со ореви.",
+        "Печете додека не поруменат.",
+        "Прелијте со сируп."
+      ],
+      "notes": "Оставете го да кисне преку ноќ."
+    }
   }
 ]
