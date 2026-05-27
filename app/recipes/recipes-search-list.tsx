@@ -32,9 +32,14 @@ export function RecipesSearchList({ list }: RecipesSearchListProps) {
 
     return list.filter((recipe) => {
       const title = recipe.title.toLowerCase()
+      const titleEn = recipe.titleEn?.toLowerCase() ?? ""
       const description = recipe.description.toLowerCase()
 
-      return title.includes(normalizedQuery) || description.includes(normalizedQuery)
+      return (
+        title.includes(normalizedQuery) ||
+        titleEn.includes(normalizedQuery) ||
+        description.includes(normalizedQuery)
+      )
     })
   }, [list, normalizedQuery])
 
@@ -74,7 +79,15 @@ export function RecipesSearchList({ list }: RecipesSearchListProps) {
                   </div>
                 )}
                 <div className="min-w-0 flex-1 p-4 pr-12">
-                  <span className="font-medium">{recipe.title}</span>
+                  <span className="font-medium">
+                    {recipe.title}
+                    {recipe.titleEn ? (
+                      <span className="text-muted-foreground font-normal">
+                        {" "}
+                        ({recipe.titleEn})
+                      </span>
+                    ) : null}
+                  </span>
                   <p className="mt-1 text-sm text-muted-foreground">{recipe.description}</p>
                 </div>
               </Link>

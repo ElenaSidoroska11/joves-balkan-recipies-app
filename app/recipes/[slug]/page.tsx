@@ -23,8 +23,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!recipe) {
     return { title: "Recipe" }
   }
+  const metaTitle = recipe.titleEn
+    ? `${recipe.title} (${recipe.titleEn})`
+    : recipe.title
+
   return {
-    title: recipe.title,
+    title: metaTitle,
     description: recipe.description,
   }
 }
@@ -60,13 +64,23 @@ export default async function RecipePage({ params }: Props) {
       </Link>
       <h1 className="mt-3 text-3xl font-medium tracking-tight md:text-4xl">
         {recipe.title}
+        {recipe.titleEn ? (
+          <span className="text-muted-foreground font-normal">
+            {" "}
+            ({recipe.titleEn})
+          </span>
+        ) : null}
       </h1>
 
       {recipe.image && (
         <div className="relative mt-6 aspect-4/3 w-full max-w-2xl overflow-hidden rounded-xl border border-border/60 bg-muted/30 shadow-sm">
           <Image
             src={publicPath(recipe.image)}
-            alt={recipe.title}
+            alt={
+              recipe.titleEn
+                ? `${recipe.title} (${recipe.titleEn})`
+                : recipe.title
+            }
             fill
             priority
             className="object-cover"

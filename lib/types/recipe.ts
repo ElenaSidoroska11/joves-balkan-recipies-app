@@ -7,6 +7,7 @@ export type Recipe = {
   slug: string
   image?: string
   title: string
+  titleEn?: string
   description: string
   region?: string
   prepMinutes?: number
