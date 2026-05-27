@@ -1,5 +1,271 @@
 [
   {
+    "slug": "lazanja",
+    "image": "/recipies-photos/lazanja.png",
+    "title": "Лазања (lasagna)",
+    "description": "Layers of pasta, rich meat sauce, creamy béchamel, and melted cheese baked until golden and bubbling.",
+    "region": "Italy",
+    "prepMinutes": 40,
+    "cookMinutes": 50,
+    "servings": 6,
+    "tags": ["baked", "mains", "pasta"],
+    "ingredients": [
+      { "amount": "500 g", "item": "minced meat" },
+      { "amount": "1 pack", "item": "lasagna sheets" },
+      { "amount": "500 ml", "item": "tomato sauce" },
+      { "amount": "300 g", "item": "mozzarella cheese" },
+      { "amount": "500 ml", "item": "béchamel sauce" }
+    ],
+    "steps": [
+      "Cook minced meat with tomato sauce.",
+      "Layer lasagna sheets, meat sauce, béchamel, and cheese.",
+      "Repeat layers until tray is full.",
+      "Bake until golden and bubbling."
+    ],
+    "notes": "Let it rest 10 minutes before cutting."
+  },
+  {
+    "slug": "pastrmajlija",
+    "image": "/recipies-photos/pastrmajlija.png",
+    "title": "Пастрмајлија (pastrmajlija)",
+    "description": "Traditional Macedonian oval flatbread topped with seasoned diced meat and baked until crispy.",
+    "region": "Macedonia",
+    "prepMinutes": 30,
+    "cookMinutes": 25,
+    "servings": 4,
+    "tags": ["baked", "mains"],
+    "ingredients": [
+      { "amount": "500 g", "item": "bread dough" },
+      { "amount": "400 g", "item": "pork or chicken meat, diced" },
+      { "amount": "2", "item": "eggs" },
+      { "item": "salt, pepper, paprika" }
+    ],
+    "steps": [
+      "Shape dough into oval forms.",
+      "Place seasoned diced meat on top.",
+      "Bake until crust is golden.",
+      "Add eggs near the end of baking if desired."
+    ],
+    "notes": "Best served hot with yogurt."
+  },
+  {
+    "slug": "musli",
+    "image": "/recipies-photos/musli.png",
+    "title": "Мусли со јагода, банана и чоколадо",
+    "description": "Fresh breakfast bowl with crunchy muesli, banana slices, chocolate pieces, and strawberries on top.",
+    "region": "Modern breakfast",
+    "prepMinutes": 10,
+    "cookMinutes": 0,
+    "servings": 1,
+    "tags": ["breakfast", "sweet"],
+    "ingredients": [
+      { "amount": "80 g", "item": "muesli" },
+      { "amount": "1", "item": "banana" },
+      { "amount": "4", "item": "strawberries" },
+      { "amount": "30 g", "item": "chocolate pieces" },
+      { "amount": "200 ml", "item": "milk or yogurt" }
+    ],
+    "steps": [
+      "Add muesli into a bowl.",
+      "Pour milk or yogurt over it.",
+      "Add sliced banana and chocolate.",
+      "Place strawberries on top."
+    ],
+    "notes": "You can use dark or milk chocolate."
+  },
+  {
+    "slug": "spageti",
+    "image": "/recipies-photos/spageti.png",
+    "title": "Шпагети со доматен сос и печено месо",
+    "description": "Classic spaghetti served with rich tomato sauce and topped with grilled meat of choice.",
+    "region": "Italian-inspired",
+    "prepMinutes": 20,
+    "cookMinutes": 30,
+    "servings": 4,
+    "tags": ["pasta", "mains"],
+    "ingredients": [
+      { "amount": "400 g", "item": "spaghetti" },
+      { "amount": "500 ml", "item": "tomato sauce" },
+      { "amount": "300 g", "item": "chicken, pork, or beef" },
+      { "amount": "2 cloves", "item": "garlic" }
+    ],
+    "steps": [
+      "Cook spaghetti until al dente.",
+      "Prepare tomato sauce with garlic and seasoning.",
+      "Grill or roast meat separately.",
+      "Serve spaghetti with sauce and meat on top."
+    ],
+    "notes": "Parmesan cheese goes great on top."
+  },
+  {
+    "slug": "rebro",
+    "image": "/recipies-photos/rebro.png",
+    "title": "Ребра со компири во релна",
+    "description": "Slow-roasted ribs with crispy seasoned potato cubes baked together in the oven.",
+    "region": "Balkan home cooking",
+    "prepMinutes": 20,
+    "cookMinutes": 90,
+    "servings": 4,
+    "tags": ["baked", "mains"],
+    "ingredients": [
+      { "amount": "1 kg", "item": "pork ribs" },
+      { "amount": "700 g", "item": "potatoes, cubed" },
+      { "amount": "3 tbsp", "item": "oil" },
+      { "item": "salt, pepper, paprika" }
+    ],
+    "steps": [
+      "Season ribs and potatoes.",
+      "Place in baking tray with oil.",
+      "Bake until ribs are tender and potatoes crispy.",
+      "Turn once during baking."
+    ],
+    "notes": "Serve with fresh salad."
+  },
+  {
+    "slug": "makaroni-bolonjeze",
+    "image": "/recipies-photos/makaroni.png",
+    "title": "Макарони со болоњезе сос",
+    "description": "Pasta covered in a rich minced meat tomato sauce slowly cooked for deep flavour.",
+    "region": "Italy",
+    "prepMinutes": 20,
+    "cookMinutes": 40,
+    "servings": 4,
+    "tags": ["pasta", "mains"],
+    "ingredients": [
+      { "amount": "400 g", "item": "macaroni" },
+      { "amount": "400 g", "item": "minced meat" },
+      { "amount": "500 ml", "item": "tomato sauce" },
+      { "amount": "1", "item": "onion" }
+    ],
+    "steps": [
+      "Cook macaroni until soft.",
+      "Cook onion and minced meat.",
+      "Add tomato sauce and simmer.",
+      "Mix with macaroni and serve."
+    ],
+    "notes": "Top with grated cheese if desired."
+  },
+  {
+    "slug": "pizza",
+    "image": "/recipies-photos/pizza.png",
+    "title": "Домашна пица (home made pizza)",
+    "description": "Homemade pizza with melted cheese, tomato sauce, and toppings of choice baked on crispy dough.",
+    "region": "Italy",
+    "prepMinutes": 35,
+    "cookMinutes": 20,
+    "servings": 4,
+    "tags": ["baked", "pizza"],
+    "ingredients": [
+      { "amount": "500 g", "item": "pizza dough" },
+      { "amount": "200 ml", "item": "tomato sauce" },
+      { "amount": "300 g", "item": "mozzarella cheese" },
+      { "item": "toppings of choice" }
+    ],
+    "steps": [
+      "Roll out pizza dough.",
+      "Spread tomato sauce and cheese.",
+      "Add toppings.",
+      "Bake until crust is crispy."
+    ],
+    "notes": "Best baked in a very hot oven."
+  },
+  {
+    "slug": "hamburger",
+    "image": "/recipies-photos/hamburger.png",
+    "title": "Хамбургер (hamburger)",
+    "description": "Juicy grilled burger served in a soft bun with fresh vegetables and sauces.",
+    "region": "American-style",
+    "prepMinutes": 20,
+    "cookMinutes": 15,
+    "servings": 2,
+    "tags": ["burger", "grilled"],
+    "ingredients": [
+      { "amount": "300 g", "item": "ground beef" },
+      { "amount": "2", "item": "burger buns" },
+      { "amount": "2 slices", "item": "cheese" },
+      { "item": "lettuce, tomato, onion" }
+    ],
+    "steps": [
+      "Shape and season burger patties.",
+      "Cook on grill or pan.",
+      "Assemble buns with vegetables and cheese.",
+      "Serve warm."
+    ],
+    "notes": "Add fries on the side for a full meal."
+  },
+  {
+    "slug": "morsko-makaroni",
+    "image": "/recipies-photos/morsko.png",
+    "title": "Макарони со доматен сос и морско",
+    "description": "Pasta with seafood mixed into a light garlic tomato sauce.",
+    "region": "Mediterranean",
+    "prepMinutes": 20,
+    "cookMinutes": 25,
+    "servings": 4,
+    "tags": ["seafood", "pasta"],
+    "ingredients": [
+      { "amount": "400 g", "item": "macaroni" },
+      { "amount": "300 g", "item": "seafood mix" },
+      { "amount": "400 ml", "item": "tomato sauce" },
+      { "amount": "2 cloves", "item": "garlic" }
+    ],
+    "steps": [
+      "Cook pasta until ready.",
+      "Cook garlic and seafood briefly.",
+      "Add tomato sauce and simmer.",
+      "Mix with pasta and serve."
+    ],
+    "notes": "Best with shrimp and mussels."
+  },
+  {
+    "slug": "letna-mandza",
+    "image": "/recipies-photos/letna-mandza.png",
+    "title": "Летна манџа со јајце, патлиџан, пиперка и урда",
+    "description": "Light summer vegetable dish with roasted peppers, eggplant, eggs, and soft cheese.",
+    "region": "Macedonian home cooking",
+    "prepMinutes": 20,
+    "cookMinutes": 35,
+    "servings": 3,
+    "tags": ["vegetarian", "summer"],
+    "ingredients": [
+      { "amount": "1", "item": "eggplant" },
+      { "amount": "2", "item": "peppers" },
+      { "amount": "3", "item": "eggs" },
+      { "amount": "150 g", "item": "urda cheese" }
+    ],
+    "steps": [
+      "Cook chopped vegetables until soft.",
+      "Add eggs and stir gently.",
+      "Mix in urda cheese.",
+      "Cook briefly and serve warm."
+    ],
+    "notes": "Perfect with fresh bread."
+  },
+  {
+    "slug": "pire-meso",
+    "image": "/recipies-photos/pire-meso.png",
+    "title": "Пире со месо по избор",
+    "description": "Creamy mashed potatoes served with grilled or roasted meat of choice.",
+    "region": "Comfort food",
+    "prepMinutes": 20,
+    "cookMinutes": 40,
+    "servings": 4,
+    "tags": ["mains", "comfort-food"],
+    "ingredients": [
+      { "amount": "700 g", "item": "potatoes" },
+      { "amount": "300 g", "item": "meat of choice" },
+      { "amount": "50 g", "item": "butter" },
+      { "amount": "100 ml", "item": "milk" }
+    ],
+    "steps": [
+      "Boil potatoes until soft.",
+      "Mash with butter and milk.",
+      "Cook meat separately.",
+      "Serve meat over or beside the puree."
+    ],
+    "notes": "Chicken or pork works especially well."
+  },
+  {
     "slug": "stuffed-peppers",
     "image": "recipies-photos/stuffed-peppers.png",
     "title": "Полнети пиперки (stuffed peppers)",
@@ -8,7 +274,7 @@
     "prepMinutes": 35,
     "cookMinutes": 75,
     "servings": 4,
-    "tags": ["mains", "baked", "comfort"],
+    "tags": ["mains", "baked"],
     "ingredients": [
       { "amount": "4 large", "item": "bell peppers, tops cut and seeded" },
       {
@@ -42,7 +308,7 @@
     "prepMinutes": 40,
     "cookMinutes": 120,
     "servings": 6,
-    "tags": ["mains", "stewed", "comfort"],
+    "tags": ["mains", "stewed"],
     "ingredients": [
       { "amount": "1 large", "item": "pickled cabbage head, leaves separated" },
       { "amount": "500 g", "item": "minced meat" },
@@ -86,52 +352,6 @@
     "notes": "Serve with yogurt."
   },
   {
-    "slug": "shopska-salad",
-    "image": "/recipies-photos/sopska-salata.png",
-    "title": "Шопска салата (shopska salad)",
-    "description": "Fresh tomato-cucumber salad topped with grated white cheese.",
-    "region": "Bulgaria / Macedonia",
-    "prepMinutes": 15,
-    "cookMinutes": 0,
-    "servings": 4,
-    "tags": ["salad", "fresh"],
-    "ingredients": [
-      { "amount": "3", "item": "tomatoes" },
-      { "amount": "1", "item": "cucumber" },
-      { "amount": "1", "item": "onion" },
-      { "amount": "150 g", "item": "white cheese (sirene/feta)" },
-      { "amount": "2 tbsp", "item": "oil" }
-    ],
-    "steps": [
-      "Chop vegetables.",
-      "Mix in bowl with oil.",
-      "Top with grated cheese."
-    ],
-    "notes": "Simple and refreshing."
-  },
-  {
-    "slug": "cevapi",
-    "image": "/recipies-photos/kebapi.png",
-    "title": "Ќебапи (cevapi)",
-    "description": "Grilled minced meat sausages served with flatbread and onions.",
-    "region": "Bosnia / Serbia",
-    "prepMinutes": 20,
-    "cookMinutes": 15,
-    "servings": 4,
-    "tags": ["grilled", "mains"],
-    "ingredients": [
-      { "amount": "500 g", "item": "minced beef" },
-      { "amount": "2 cloves", "item": "garlic" },
-      { "item": "salt, pepper" }
-    ],
-    "steps": [
-      "Mix ingredients and shape into small sausages.",
-      "Grill until cooked through.",
-      "Serve with bread and onions."
-    ],
-    "notes": "Best with ajvar."
-  },
-  {
     "slug": "ajvar",
     "image": "/recipies-photos/ajvar.png",
     "title": "Ајвар (ajvar)",
@@ -155,46 +375,6 @@
     "notes": "Great as a spread or side."
   },
   {
-    "slug": "gibanica",
-    "image": "/recipies-photos/gibanica.png",
-    "title": "Гибаница (gibanica)",
-    "description": "Layered pastry with cheese and eggs.",
-    "region": "Serbia / Macedonia",
-    "prepMinutes": 25,
-    "cookMinutes": 40,
-    "servings": 6,
-    "tags": ["baked", "pastry"],
-    "ingredients": [
-      { "amount": "500 g", "item": "filo pastry" },
-      { "amount": "400 g", "item": "white cheese" },
-      { "amount": "3", "item": "eggs" }
-    ],
-    "steps": ["Mix cheese and eggs.", "Layer with filo.", "Bake until golden."],
-    "notes": "Soft inside, crispy outside."
-  },
-  {
-    "slug": "grav",
-    "image": "/recipies-photos/grav.png",
-    "title": "Грав (bean stew)",
-    "description": "Hearty bean stew often cooked with smoked meat.",
-    "region": "Serbia / Macedonia",
-    "prepMinutes": 15,
-    "cookMinutes": 120,
-    "servings": 5,
-    "tags": ["stew", "comfort"],
-    "ingredients": [
-      { "amount": "400 g", "item": "beans" },
-      { "amount": "1", "item": "onion" },
-      { "amount": "200 g", "item": "smoked meat" }
-    ],
-    "steps": [
-      "Soak beans overnight.",
-      "Cook with onion and meat.",
-      "Season and simmer."
-    ],
-    "notes": "Classic winter dish."
-  },
-  {
     "slug": "musaka",
     "image": "/recipies-photos/musaka.png",
     "title": "Мусака (moussaka)",
@@ -215,28 +395,6 @@
       "Pour egg mixture and finish baking."
     ],
     "notes": "Different from Greek version."
-  },
-  {
-    "slug": "tarator",
-    "image": "/recipies-photos/taratur.png",
-    "title": "Таратор (tarator)",
-    "description": "Cold yogurt and cucumber soup.",
-    "region": "Bulgaria / Macedonia",
-    "prepMinutes": 10,
-    "cookMinutes": 0,
-    "servings": 4,
-    "tags": ["soup", "cold"],
-    "ingredients": [
-      { "amount": "500 ml", "item": "yogurt" },
-      { "amount": "1", "item": "cucumber" },
-      { "amount": "2 cloves", "item": "garlic" }
-    ],
-    "steps": [
-      "Mix yogurt with water.",
-      "Add cucumber and garlic.",
-      "Chill before serving."
-    ],
-    "notes": "Perfect for summer."
   },
   {
     "slug": "baklava",

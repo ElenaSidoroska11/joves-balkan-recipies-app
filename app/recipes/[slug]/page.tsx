@@ -7,7 +7,7 @@ import { getAllRecipeSlugs, getRecipeBySlug } from "@/lib/recipes"
 import { publicPath } from "@/lib/utils"
 
 import type { Metadata } from "next"
-import { ArrowLeft } from "lucide-react"
+import { ArrowLeft, Clock, MapPin, Users } from "lucide-react"
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -79,36 +79,68 @@ export default async function RecipePage({ params }: Props) {
         {recipe.description}
       </p>
 
-      <dl className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground">
+      <dl className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {recipe.region && (
-          <div>
-            <dt className="inline font-medium text-foreground/80">
-              Region / style
-            </dt>{" "}
-            <dd className="inline">{recipe.region}</dd>
+          <div className="flex gap-3 rounded-xl border border-border/60 bg-muted/25 px-4 py-3 shadow-sm">
+            <div
+              className="flex size-9 shrink-0 items-center justify-center rounded-lg border border-border/50 bg-background/60 text-muted-foreground"
+              aria-hidden
+            >
+              <MapPin className="size-4" />
+            </div>
+            <div className="min-w-0">
+              <dt className="text-xs font-medium tracking-wide text-muted-foreground uppercase">
+                Region / style
+              </dt>
+              <dd className="mt-0.5 text-sm font-medium text-foreground">
+                {recipe.region}
+              </dd>
+            </div>
           </div>
         )}
         {recipe.servings != null && (
-          <div>
-            <dt className="inline font-medium text-foreground/80">Serves</dt>{" "}
-            <dd className="inline">{recipe.servings}</dd>
+          <div className="flex gap-3 rounded-xl border border-border/60 bg-muted/25 px-4 py-3 shadow-sm">
+            <div
+              className="flex size-9 shrink-0 items-center justify-center rounded-lg border border-border/50 bg-background/60 text-muted-foreground"
+              aria-hidden
+            >
+              <Users className="size-4" />
+            </div>
+            <div className="min-w-0">
+              <dt className="text-xs font-medium tracking-wide text-muted-foreground uppercase">
+                Serves
+              </dt>
+              <dd className="mt-0.5 text-sm font-medium text-foreground">
+                {recipe.servings}
+              </dd>
+            </div>
           </div>
         )}
         {totalTime != null && totalTime > 0 && (
-          <div>
-            <dt className="inline font-medium text-foreground/80">
-              Active time (approx.)
-            </dt>{" "}
-            <dd className="inline">
-              {[
-                recipe.prepMinutes != null &&
-                  `prep ${formatTime(recipe.prepMinutes)}`,
-                recipe.cookMinutes != null &&
-                  `cook ${formatTime(recipe.cookMinutes)}`,
-              ]
-                .filter(Boolean)
-                .join(" · ")}
-            </dd>
+          <div className="flex gap-3 rounded-xl border border-border/60 bg-muted/25 px-4 py-3 shadow-sm sm:col-span-2 lg:col-span-1">
+            <div
+              className="flex size-9 shrink-0 items-center justify-center rounded-lg border border-border/50 bg-background/60 text-muted-foreground"
+              aria-hidden
+            >
+              <Clock className="size-4" />
+            </div>
+            <div className="min-w-0">
+              <dd className="mt-0.5 text-sm font-medium text-foreground">
+                {formatTime(totalTime)}
+              </dd>
+              {(recipe.prepMinutes != null || recipe.cookMinutes != null) && (
+                <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+                  {[
+                    recipe.prepMinutes != null &&
+                      `prep ${formatTime(recipe.prepMinutes)}`,
+                    recipe.cookMinutes != null &&
+                      `cook ${formatTime(recipe.cookMinutes)}`,
+                  ]
+                    .filter(Boolean)
+                    .join(" · ")}
+                </p>
+              )}
+            </div>
           </div>
         )}
       </dl>
