@@ -42,10 +42,10 @@ export function FavouritesRecipesList({ recipes }: FavouritesRecipesListProps) {
           <div className="group relative">
             <Link
               href={`/recipes/${recipe.slug}`}
-              className="flex gap-4 overflow-hidden rounded-lg border border-border bg-card transition-colors hover:bg-accent/50"
+              className="flex items-stretch gap-4 overflow-hidden rounded-lg border border-border bg-card transition-colors hover:bg-accent/50"
             >
               {recipe.image && (
-                <div className="relative h-24 w-28 shrink-0 overflow-hidden bg-muted/30 sm:h-28 sm:w-36">
+                <div className="relative min-h-24 w-28 shrink-0 self-stretch overflow-hidden bg-muted/30 sm:min-h-28 sm:w-36">
                   <Image
                     src={publicPath(recipe.image)}
                     alt={recipe.title}

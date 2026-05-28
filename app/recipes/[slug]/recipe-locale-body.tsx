@@ -91,14 +91,14 @@ export function RecipeLocaleBody({ recipe, totalTime }: RecipeLocaleBodyProps) {
   return (
     <>
       <div
-        className="mt-6 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between"
+        className="mt-6 flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:justify-between"
         role="tablist"
         aria-label="Recipe language"
       >
         <div className="text-xs font-medium tracking-wide text-muted-foreground uppercase">
           {effectiveLocale === "mk" ? "Јазик" : "Language"}
         </div>
-        <div className="inline-flex rounded-lg border border-border bg-muted/30 p-1">
+        <div className="inline-flex w-fit rounded-lg border border-border bg-muted/30 p-1">
           {(["en", "mk"] as const).map((code) => {
             const disabled = code === "mk" && !hasMk
             const active = effectiveLocale === code

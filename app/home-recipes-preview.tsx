@@ -32,7 +32,7 @@ export function HomeRecipesPreview({ recipes }: HomeRecipesPreviewProps) {
               className="group flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-border/50 bg-white/50 shadow-sm ring-1 ring-foreground/3 transition duration-300 hover:-translate-y-0.5 hover:border-border hover:shadow-md"
             >
               {recipe.image && (
-                <div className="relative aspect-4/3 w-full overflow-hidden border-b border-border/40 bg-muted/30">
+                <div className="relative aspect-4/3 w-full overflow-hidden bg-muted/30">
                   <Image
                     src={publicPath(recipe.image)}
                     alt={recipe.title}
@@ -42,7 +42,7 @@ export function HomeRecipesPreview({ recipes }: HomeRecipesPreviewProps) {
                   />
                 </div>
               )}
-              <div className="flex flex-1 flex-col justify-between p-5 pt-4">
+              <div className="flex flex-1 flex-col justify-between border-t border-border/40 p-5 pt-4">
                 <div>
                   <h3 className="text-base leading-snug font-medium text-foreground group-hover:underline group-hover:decoration-primary/50 group-hover:underline-offset-2">
                     {recipe.title}

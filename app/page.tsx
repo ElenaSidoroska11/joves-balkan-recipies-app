@@ -36,7 +36,7 @@ function HeroPhotoFrame({
         .filter(Boolean)
         .join(" ")}
     >
-      <div className="relative h-full w-full overflow-hidden rounded-lg">
+      <div className="absolute inset-1.5 overflow-hidden rounded-lg">
         <Image
           src={src}
           alt={alt}
