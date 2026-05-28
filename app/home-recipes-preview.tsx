@@ -46,6 +46,12 @@ export function HomeRecipesPreview({ recipes }: HomeRecipesPreviewProps) {
                 <div>
                   <h3 className="text-base leading-snug font-medium text-foreground group-hover:underline group-hover:decoration-primary/50 group-hover:underline-offset-2">
                     {recipe.title}
+                    {recipe.titleEn ? (
+                      <span className="text-muted-foreground font-normal">
+                        {" "}
+                        ({recipe.titleEn})
+                      </span>
+                    ) : null}
                   </h3>
                   <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-muted-foreground">
                     {recipe.description}
