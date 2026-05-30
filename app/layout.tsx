@@ -27,10 +27,6 @@ export const metadata: Metadata = {
   },
   description:
     "Balkan home cooking from Jove’s kitchen — family recipes, written for the table.",
-  icons: {
-    icon: siteImage,
-    apple: siteImage,
-  },
   openGraph: {
     title: "Jove’s Balkan recipes",
     description:
